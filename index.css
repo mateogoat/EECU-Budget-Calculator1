@@ -1,0 +1,66 @@
+:root {
+    --primary-color: #0054A4;
+    --secondary-color: #EBEBEB;
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --secondary-text-color: #ffffff;
+
+    --housing-color: #8979ff;
+    --utility-color: #ff928a;
+    --transportation-color: #3cc3df;
+    --entertainment-color: #ffae4c;
+    --hobbies-color: #537ff1;
+    --splurges-color: #6fd195;
+    --emergency-funds-color: #8c63da;
+    --retirement-color: #2bb7dc;
+    --vacation-funds-color: #1f94ff;
+    --radius: 15px;
+    --title-font-size: 40px;
+    --subheading-font-size: 32px;
+    --text-font-size: 24px;
+    --input-font-size: 16px;
+    --pie-chart-text: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.progressBar {
+    width: 100%;
+    background-color: var(--secondary-color);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-top: 20px;
+}
+.progress {
+    height: 30px;
+    background-color: var(--primary-color);
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+button.active {
+    background-color: var(--secondary-color);
+}
